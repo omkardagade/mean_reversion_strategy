@@ -2,7 +2,7 @@
 
 📌 Introduction
 
-In this project, I utilized and implemented a rule-based backtesting framework to backtest a simple but sound intraday trading strategy. The backtesting framework backtested a range of stocks listed on the Indian stock exchange based on data at 15-minute intervals over a 30-day time span. The primary objective was to identify long and short opportunities by using a combination of technical indicators like Bollinger Bands and RSI.
+In this project, I utilized and implemented a rule based backtesting framework to backtest a simple but sound intraday trading strategy. The backtesting framework backtested a range of stocks listed on the Indian stock exchange based on data at 15 minute intervals over a 30 day time span. The primary objective was to identify long and short opportunities by using a combination of technical indicators like Bollinger Bands and RSI.
 
 ⸻
 
@@ -19,7 +19,7 @@ In this project, I utilized and implemented a rule-based backtesting framework t
 
 2. 🧪 Backtesting Concepts
 	•	Strategy Logic: I built logic to simulate both long and short trades based on entry signals and computed returns.
-	•	Risk-Reward Calculation: I applied a risk-to-reward ratio of 1:1.5 to simulate realistic trade exits using dynamically calculated stop-loss levels based on recent price extremes.
+	•	Risk-Reward Calculation: I applied a risk to reward ratio of 1:1.5 to simulate realistic trade exits using dynamically calculated stoploss levels based on recent price extremes.
 	•	Performance Metrics:
 	•	Win Rate: Percentage of trades that were profitable.
 	•	Average Return: Mean return per trade.
@@ -29,9 +29,9 @@ In this project, I utilized and implemented a rule-based backtesting framework t
 
 3. 🧠 Python & Libraries
 	•	pandas: For data manipulation, rolling windows, and signal creation.
-	•	yfinance: For downloading historical stock price data at 15-minute intervals.
+	•	yfinance: For downloading historical stock price data at 15 minute intervals.
 	•	ta (Technical Analysis library): To compute indicators like RSI and Bollinger Bands with ease.
-	•	Exception Handling: Used try-except blocks to ensure the system doesn’t break when data is missing or APIs fail.
+	•	Exception Handling: Used try except blocks to ensure the system doesn’t break when data is missing or APIs fail.
 
 ⸻
 
@@ -52,7 +52,7 @@ In this project, I utilized and implemented a rule-based backtesting framework t
 
 🔍 Challenges Faced
 	•	Initially, I struggled with understanding the proper way to simulate trade exits and implement stoploss-based calculations.
-	•	Another issue was handling position overlap—if not properly coded, multiple signals would trigger multiple entries.
+	•	Another issue was handling position overlap, if not properly coded, multiple signals would trigger multiple entries.
 	•	Additionally, I had to tune the signal thresholds to find a balance between signal quantity and quality.
 
 ⸻
