@@ -15,7 +15,7 @@ tickers = {
 }
 
 def fetch_data(ticker):
-    raw = yf.download(ticker, interval='15m', period='30d', progress=False)
+    raw = yf.download(ticker, interval='15m', period='60d', progress=False)
 
     # Fix: convert columns to 1D Series
     df = pd.DataFrame({
